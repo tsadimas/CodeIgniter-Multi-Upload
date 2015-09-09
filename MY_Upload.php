@@ -378,7 +378,7 @@
 						}
 						
 						//Sanitize the file name for security.
-						$this->file_name = $this->clean_file_name($this->file_name);
+						$this->file_name = sanitize_filename($this->file_name);
 						
 						//Truncate the file name if it's too long
 						if($this->max_filename > 0){
